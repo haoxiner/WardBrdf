@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="name.haoxin.wardbrdf.MainActivity">
+
+    <name.haoxin.wardbrdf.CustomGLSurfaceView
+        android:id="@+id/glview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/quick_main" />
+
+    <TextView
+        android:id="@+id/fpsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/quick_margin"
+        android:layout_marginStart="@dimen/quick_margin"
+        android:layout_marginTop="@dimen/quick_margin"
+        android:text="FPS: 60"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

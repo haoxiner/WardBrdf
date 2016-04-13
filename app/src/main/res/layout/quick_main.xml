@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <Button
+        android:id="@+id/quickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/quick_margin"
+        android:layout_marginRight="@dimen/quick_margin"
+        android:layout_marginTop="@dimen/quick_margin"
+        android:alpha="0.3"
+        android:text="Options"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <RelativeLayout
+        android:id="@+id/quickGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quickButton"
+        android:layout_marginEnd="@dimen/quick_margin"
+        android:layout_marginRight="@dimen/quick_margin"
+        android:layout_marginTop="@dimen/quick_margin"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture"/>
+
+        <Button
+            android:id="@+id/renderOnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/screenshot"
+            android:layout_marginTop="@dimen/quick_margin"
+            android:text="render"/>
+
+        <Button
+            android:id="@+id/pcf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/renderOnRequest"
+            android:layout_marginTop="@dimen/quick_margin"
+            android:text="pcf"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
